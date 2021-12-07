@@ -4,9 +4,8 @@ function AllTheThings(props) {
 
   const things = props.products.map((element, index) => {
     return (
-      <li key={index} onClick ={() => props.handleClick(element)} >
-        {element.name} 
-        {element.price}
+      <li key={index} onClick={() => props.handleClick(element)} >
+        {element.name} {'$' + element.price}
       </li>
     )
   })
